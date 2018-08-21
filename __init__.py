@@ -2,14 +2,14 @@ from modules import cbpi
 import sqlite3
 from subprocess import Popen, PIPE, call
 from flask import Blueprint, render_template, jsonify, request, url_for
-
+import os
 '''
 This plugin adds an extended menu to the bottom of the cbpi web interface
 '''
 
 def connection (task, sql): 
     try:
-        connection = sqlite3.connect('./modules/plugins/cbpi-ExtendedMenu/ExtendedMenu.db')
+        connection = sqlite3.connect(os.path.dirname(os.path.abspath(__file__))+'/ExtendedMenu.db')
         cursor = connection.cursor()
         cursor.execute(sql)
         
