@@ -35,6 +35,12 @@ sudo reboot
 After rebooting your Raspberry you should see the menu on the bottom of the wab interface. By clicking on the gear-icon you can reach the admin interface where you can edit the links.
 Remember: Every change in the admin interface requires a reboot!
 
+
+![Alt text](images/cbpi-ExtendedMenu-admin.png?raw=true "Admin")
+![Alt text](images/cbpi-ExtendedMenu.png?raw=true "cbpi")
+
+
+
 ## License
 
 This project is licensed under the MIT License.
