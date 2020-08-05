@@ -14,9 +14,9 @@ def connection (task, sql):
         cursor.execute(sql)
         
     except sqlite3.Error as e:
-        print ("Database error: %s" % e)
+        print(("Database error: %s" % e))
     except Exception as e:
-        print("Exception in _query: %s" % e)
+        print(("Exception in _query: %s" % e))
  
     if task == "r":
         rows = cursor.fetchall()
